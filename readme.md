@@ -16,7 +16,7 @@
 
 The dataset is eSports earnings which is extracted from the kaggle. It provides information on the earnings of eSports players and teams. 
 
-Link: kaggle.com/code/derisnoor/esports-earnings-eda/data
+Link: https://www.kaggle.com/code/derisnoor/esports-earnings-eda/data
 
 The dataset includes about 2k entries, corresponding to the detailed earnings of eSports players and teams from different countries and regions in 10 games such as Dota2, Fortnite, League of Legends, and so on.
 
@@ -52,16 +52,16 @@ However, people usually do not have an intuitive understanding of the income of 
 
 > - What others have already done with the data?
 
-1. esports_earnings_EDA (https://www.kaggle.com/code/derisnoor/esports-earnings-eda)
+1. [esports_earnings_EDA] (https://www.kaggle.com/code/derisnoor/esports-earnings-eda)
 
     
-2. eSports Earnings: Data Visualization and Exploration(https://www.kaggle.com/code/hbakker/esports-exploratory-analysis)
+2. [eSports Earnings]: Data Visualization and Exploration(https://www.kaggle.com/code/hbakker/esports-exploratory-analysis)
 
 
-3. e_sport_data_explore(https://www.kaggle.com/code/jefsuu/e-sport-data-explore)
+3. [e_sport_data_explore](https://www.kaggle.com/code/jefsuu/e-sport-data-explore)
 
 
-4. Esports: Exploratory Analysis(https://www.kaggle.com/code/hbakker/esports-exploratory-analysis)
+4. [Esports: Exploratory Analysis](https://www.kaggle.com/code/hbakker/esports-exploratory-analysis)
 
 
 > - Why is your approach original?
@@ -70,7 +70,7 @@ Most of the Exploratory Data Analysis of the above related works use static visu
 
 > - What source of inspiration do you take? Visualizations that you found on other websites or magazines (might be unrelated to your data).
 
-1.  eSports: Should You Start a Startup? (https://public.tableau.com/app/profile/jack.daoud/viz/eSportsReport/Story)
+1.  [eSports: Should You Start a Startup?](https://public.tableau.com/app/profile/jack.daoud/viz/eSportsReport/Story)
 * This is the project created by the publisher of the dataset. Combined with other datasets, he presents several aspects of the esports industry vivid and informatively.
 
 2. [Esports Viewership Stats for 2018](https://escharts.com/2018) 
