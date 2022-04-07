@@ -4,7 +4,7 @@
 | -------------- | ------ |
 | Li Shanci | 322772 |
 | Luo Ruizhi | 323100 |
-| Yu Aibin | |
+| Yu Aibin | 336380 |
 
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
@@ -54,7 +54,6 @@ However, people usually do not have an intuitive understanding of the income of 
 
 1. [esports_earnings_EDA](https://www.kaggle.com/code/derisnoor/esports-earnings-eda)
 
-    
 2. [eSports Earnings: Data Visualization and Exploration](https://www.kaggle.com/code/hbakker/esports-exploratory-analysis)
 
 
