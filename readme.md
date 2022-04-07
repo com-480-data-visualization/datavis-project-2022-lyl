@@ -52,10 +52,10 @@ However, people usually do not have an intuitive understanding of the income of 
 
 > - What others have already done with the data?
 
-1. [esports_earnings_EDA] (https://www.kaggle.com/code/derisnoor/esports-earnings-eda)
+1. [esports_earnings_EDA](https://www.kaggle.com/code/derisnoor/esports-earnings-eda)
 
     
-2. [eSports Earnings]: Data Visualization and Exploration(https://www.kaggle.com/code/hbakker/esports-exploratory-analysis)
+2. [eSports Earnings: Data Visualization and Exploration](https://www.kaggle.com/code/hbakker/esports-exploratory-analysis)
 
 
 3. [e_sport_data_explore](https://www.kaggle.com/code/jefsuu/e-sport-data-explore)
