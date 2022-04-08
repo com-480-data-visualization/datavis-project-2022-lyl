@@ -60,7 +60,7 @@ However, people usually do not have an intuitive understanding of the income of 
 * A team can appear more than once but note that it is a different game.
 * Since there are some star players in each game. There are lots of  'outliers' in the data, so it's better to use median rather than mean.
 
-<img src="./graph/boxplot.jpg" alt="boxplot" style="zoom: 50%;" />
+![outliers](./graph/outliers.png)
 
 **Our data exploratory analysis and visualization are mainly based on the teams, players and country&continent point of view, which conclusively provides the following findings. **
 
@@ -70,17 +70,17 @@ However, people usually do not have an intuitive understanding of the income of 
 
 ![newplot](./graph/newplot.png)
 
-- While it's true that MOBO brings in the highest total USD Prize won and median earnings, the median earnings for CSGO are highest. In addition, it should be mentioned that MOBA games has the highest number of competitors within the dataset. This could signify 1 of 2 things. MOBA is indeed the most popular and thus could explain the higher amount of money earned by teams since there would be more viewership.
+- While it's true that MOBO brings in the highest total USD Prize won and median earnings, the median earnings for CSGO are highest. In addition, it should be mentioned that MOBA games has the highest number of competitors within the dataset. This could signify that MOBA is indeed the most popular and thus could explain the higher amount of money earned by teams since there would be more viewership.
 
 #### From the player point of view
 
 - Korea has the most esports players, followed by China and the United States of America. For the best earning player of every game, most are from Asia and Europe, only the player of Fortnite is from North America. 
-- 
+- The earnings of players are quite different from teams. Although MOBA is still the highest total USD Prize, the median earnings for FPS are the highest. If we looked into the game, players from DOTA2 earn the highest median USD Prize, which is not CSGO anymore.
 
 #### From country&continent point of view ####
 
 - Country and Continent Interestingly, it seems that China has the most amount of ESports earnings. If we look at Continent, Asia and Europe largely dominates in terms of total USD earned. However, if we look at it from other dimension. Countries like Lebonon and Parkistan take the cake.
-- Countries like China and Korea probably have a way higher population that are into ESports, thus resulting in higher total earnings. Countries like Parkistan and other less developed countries probably aren't as accepting of ESports culture, so you would have to be really good to get into it, which explains higher median earnings. **Some of the lower player count country has "elite" players while popular countries have sheer numbers**
+- Countries like China and Korea probably have a way higher population that are into ESports, thus resulting in higher total earnings. Countries like Parkistan and other less developed countries probably aren't as accepting of ESports culture, so you would have to be really good to get into it, which explains higher median earnings. **Some of the lower player count country has "elite" players while popular countries have sheer numbers.**
 
 
 ### Related work
