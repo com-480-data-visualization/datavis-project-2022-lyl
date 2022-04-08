@@ -47,49 +47,40 @@ However, people usually do not have an intuitive understanding of the income of 
 
 #### About Data 
 
-* The data includes 10 games and we can classify them according to the 5 genres.
+* The data includes 10 games and we can classify them according to the 5 genres. Multiplayer Online Battle Arena has the highest number of teams and players.
 
-|            **Genre**            |                           **Game**                           | Count |
-| :-----------------------------: | :----------------------------------------------------------: | :---: |
-|          Battle Royale          |                       [Fortnite, PUBG]                       |  200  |
-|      Collectible Card Game      |                        [Hearthstone]                         |  80   |
-|      First-Person Shooter       |        [Overwatch, Counter-Strike: Global Offensive]         |  200  |
-| Multiplayer Online Battle Arena | [League of Legends, Dota 2, Heroes of the Storm, Arena of Valor] |  348  |
-|            Strategy             |                        [Starcraft II]                        |  100  |
+|            **Genre**            |                           **Game**                           | Teams | Players |
+| :-----------------------------: | :----------------------------------------------------------: | :---: | :-----: |
+|          Battle Royale          |                       [Fortnite, PUBG]                       |  200  |   200   |
+|      Collectible Card Game      |                        [Hearthstone]                         |  80   |   100   |
+|      First-Person Shooter       |        [Overwatch, Counter-Strike: Global Offensive]         |  200  |   200   |
+| Multiplayer Online Battle Arena | [League of Legends, Dota 2, Heroes of the Storm, Arena of Valor] |  348  |   400   |
+|            Strategy             |                        [Starcraft II]                        |  100  |   100   |
 
 * A team can appear more than once but note that it is a different game.
-* Since there are some star players in each game. There are lots of  'outliers' in the data, so using median is much better than mean.
+* Since there are some star players in each game. There are lots of  'outliers' in the data, so it's better to use median rather than mean.
 
 <img src="./graph/boxplot.jpg" alt="boxplot" style="zoom: 50%;" />
 
-Our data exploratory analysis and visualization are mainly based on the teams, players and country&continent point of view, which conclusively provides the following findings. 
+**Our data exploratory analysis and visualization are mainly based on the teams, players and country&continent point of view, which conclusively provides the following findings. **
 
 #### From the team point of view
 
-Changes of data along different seasons can be the reflection of the rise and fall of teams and indication of interesting historical events, thus serving as a vital perspective.
+- From the plot we can see that actually Starcraft II has the lion's share of tournaments, followed by CSGO, Dota 2 and League of Legends. In fact, Starcraft 2 has more than 2X as much tournaments as CSGO. However, this is likely due to how long the game has been released and it only ranks fourth in revenue. While Dota 2 is the most earned game, which is almost 3x as much earnings as the second highest-earned game(CSGO).
 
-- From the season 2008/2009 to 2015/2016, the number of matches and total participating teams remains roughly constant over time, and the average is 3247 and 185 respectively.
-- In leagues, the proportion of the number of teams participating in the season to the total number of teams is basically between 55-70%. And this statistic remains roughly unchanged over time. The proportion reaches its highest value in the case of Belgium Jupiler League in season 2008/2009, which is 75%. Interestingly, it drops dramatically in season 2013/2014 due to missing data, which is merely 16.7%, and returns to normal in the next two seasons.
-- 92 teams participated in all the seasons, and 51 teams participated only once, accounting for 31% and 17% of all teams respectively. Besides, the number of teams participating twice to seven times is similar, accounting for 8.6% of all teams in average.
-- **From the team point of view:**
+![newplot](./graph/newplot.png)
 
-Since goals and ranking of a team is of great concern by soccer fans, such team-oriented information will also be a key focus in this project.
+- While it's true that MOBO brings in the highest total USD Prize won and median earnings, the median earnings for CSGO are highest. In addition, it should be mentioned that MOBA games has the highest number of competitors within the dataset. This could signify 1 of 2 things. MOBA is indeed the most popular and thus could explain the higher amount of money earned by teams since there would be more viewership.
 
-- Juventus from Italy Serie A got 102 points in season 2013/2014, the highest points in history. And the teams which obtained the top five low points in history are all from Belgium Jupiler League.
-- Celtic and FC Barcelona are the only two teams that enter the top 10 points every season. FC Barcelona is the team that won the most champions, which is four times in eight seasons.
-- FC Barcelona, Real Madrid CF and Celtic are the top 3 high average points teams.
-- The best new team in history is Manchester United. It won 90 points when first participating in the 2008/2009 season.
-- There are 34 teams with the largest number of matches, which is 304. While the smallest number of matches is 30, obtained by 6 teams.
-- The team is more likely to win as a home team rather than an away team, with more average team goals in the match.
-- **From the player point of view:**
+#### From the player point of view
 
-Other than the two previous points of view, data of players, such as weight, height, age and even the preferred foot will also be studied in the project to fulfill the curiosity of those who are interested.
+- Korea has the most esports players, followed by China and the United States of America. For the best earning player of every game, most are from Asia and Europe, only the player of Fortnite is from North America. 
+- 
 
-- For all players, the average height is 181.87cm and average weight 168.38g. The average age in their participating seasons is about 25 and remains almost the same over time.
-- About 75.7% of the players prefer to play with the right foot and 23.5% play with the right one.
-- Lionel Messi has the highest overall rating , which is 94, and has kept it for four seasons.
+#### From country&continent point of view ####
 
-### 
+- Country and Continent Interestingly, it seems that China has the most amount of ESports earnings. If we look at Continent, Asia and Europe largely dominates in terms of total USD earned. However, if we look at it from other dimension. Countries like Lebonon and Parkistan take the cake.
+- Countries like China and Korea probably have a way higher population that are into ESports, thus resulting in higher total earnings. Countries like Parkistan and other less developed countries probably aren't as accepting of ESports culture, so you would have to be really good to get into it, which explains higher median earnings. **Some of the lower player count country has "elite" players while popular countries have sheer numbers**
 
 
 ### Related work
