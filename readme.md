@@ -60,7 +60,7 @@ However, people usually do not have an intuitive understanding of the income of 
 * A team can appear more than once but note that it is a different game.
 * Since there are some star players in each game. There are lots of  'outliers' in the data, so using median is much better than mean.
 
-<img src="/Users/aibin/Desktop/EPFL/DV/project/datavis-project-2022-lyl/graph/boxplot.jpg" alt="boxplot" style="zoom: 50%;" />
+<img src="./graph/boxplot.jpg" alt="boxplot" style="zoom: 50%;" />
 
 Our data exploratory analysis and visualization are mainly based on the teams, players and country&continent point of view, which conclusively provides the following findings. 
 
