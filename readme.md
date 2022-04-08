@@ -63,7 +63,7 @@ However, people usually do not have an intuitive understanding of the income of 
 
 ![outliers](./graph/outliers.png)
 
-**Our data exploratory analysis and visualization are mainly based on the teams, players and country&continent point of view, which conclusively provides the following findings. **
+**Our data exploratory analysis and visualization are mainly based on the teams, players and country&continent point of view, which conclusively provides the following findings.**
 
 #### From the team point of view
 
@@ -81,7 +81,7 @@ However, people usually do not have an intuitive understanding of the income of 
 #### From country&continent point of view ####
 
 - Country and Continent Interestingly, it seems that China has the most amount of ESports earnings. If we look at Continent, Asia and Europe largely dominates in terms of total USD earned. However, if we look at it from other dimension. Countries like Lebonon and Parkistan take the cake.
-- Countries like China and Korea probably have a way higher population that are into ESports, thus resulting in higher total earnings. Countries like Parkistan and other less developed countries probably aren't as accepting of ESports culture, so you would have to be really good to get into it, which explains higher median earnings. **Some of the lower player count country has "elite" players while popular countries have sheer numbers.**
+- Countries like China and Korea probably have a way higher population that are into ESports, thus resulting in higher total earnings. Countries like Parkistan and other less developed countries probably aren't as accepting of ESports culture, so you would have to be really good to get into it, which explains higher median earnings. Some of the lower player count country has "elite" players while popular countries have sheer numbers.
 
 
 ### Related work
