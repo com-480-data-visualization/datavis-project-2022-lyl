@@ -30,7 +30,7 @@ The topic of our visualization project is to explore the earnings of eSports pla
 
 1. The audience will be welcomed by a standard title sequence and a nice eSports picture.
 2. The second scene showcases the 5 most popular of the 10 games. Clicking on a node triggers the game's theme song, and a brief intro to the game will be given. 
-3. In the next secen, there is an interactive chart that shows players and teams with the highest earnings in distinct games.
+3. In the next scene, there is an interactive chart that shows players and teams with the highest earnings in distinct games.
 4. In the final scene, a heat map of the world visualizes the average salary of esports players from different continents and countries. 
 
 
