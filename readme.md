@@ -4,7 +4,7 @@
 | -------------- | ------ |
 | Li Shanci | 322772 |
 | Luo Ruizhi | 323100 |
-| Yu Aibin | |
+| Yu Aibin | 336380 |
 
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
@@ -30,8 +30,9 @@ The topic of our visualization project is to explore the earnings of eSports pla
 
 1. The audience will be welcomed by a standard title sequence and a nice eSports picture.
 2. The second scene showcases the 5 most popular of the 10 games. Clicking on a node triggers the game's theme song, and a brief intro to the game will be given. 
-3. In the next scene, there is a heat map of the world that visualizes the average salary of esports players from different continents and countries. 
-4. The fourth scene will present the player and the team with the highest earnings in different countries or continents by clicking different regions of the world heat map.
+3. In the next scene, there is an interactive chart that shows players and teams with the highest earnings in distinct games.
+4. In the final scene, a heat map of the world visualizes the average salary of esports players from different continents and countries. 
+
 
 #### Motivation: 
 Over the past few years, the eSports industry has been growing, the number of viewers watching these games has increased every year, eSports professional players and video game streaer have become a promising career.
@@ -43,8 +44,44 @@ However, people usually do not have an intuitive understanding of the income of 
 
 * Investigators and advertising sponsor who want to promote their product in the tournament or the live streaming like Twitch. The salary of the practitioners the amount of the sponsorship will give them a general information about the popularity of the different games and the budget they need.
 
-
 ### Exploratory Data Analysis
+
+#### About Data 
+
+* The data includes 10 games and we can classify them according to the 5 genres. Multiplayer Online Battle Arena has the highest number of teams and players.
+
+|            **Genre**            |                           **Game**                           | Teams | Players |
+| :-----------------------------: | :----------------------------------------------------------: | :---: | :-----: |
+|          Battle Royale          |                       [Fortnite, PUBG]                       |  200  |   200   |
+|      Collectible Card Game      |                        [Hearthstone]                         |  80   |   100   |
+|      First-Person Shooter       |        [Overwatch, Counter-Strike: Global Offensive]         |  200  |   200   |
+| Multiplayer Online Battle Arena | [League of Legends, Dota 2, Heroes of the Storm, Arena of Valor] |  348  |   400   |
+|            Strategy             |                        [Starcraft II]                        |  100  |   100   |
+
+* A team can appear more than once but note that it is a different game.
+* Since there are some star players in each game. There are lots of  'outliers' in the data, so it's better to use median rather than mean.
+
+![outliers](./graph/outliers.png)
+
+**Our data exploratory analysis and visualization are mainly based on the teams, players and country&continent point of view, which conclusively provides the following findings.**
+
+#### From the team point of view
+
+- From the plot we can see that actually Starcraft II has the lion's share of tournaments, followed by CSGO, Dota 2 and League of Legends. In fact, Starcraft 2 has more than 2X as much tournaments as CSGO. However, this is likely due to how long the game has been released and it only ranks fourth in revenue. While Dota 2 is the most earned game, which is almost 3x as much earnings as the second highest-earned game(CSGO).
+
+![newplot](./graph/newplot.png)
+
+- While it's true that MOBO brings in the highest total USD Prize won and median earnings, the median earnings for CSGO are highest. In addition, it should be mentioned that MOBA games has the highest number of competitors within the dataset. This could signify that MOBA is indeed the most popular and thus could explain the higher amount of money earned by teams since there would be more viewership.
+
+#### From the player point of view
+
+- Korea has the most esports players, followed by China and the United States of America. For the best earning player of every game, most are from Asia and Europe, only the player of Fortnite is from North America. 
+- The earnings of players are quite different from teams. Although MOBA is still the highest total USD Prize, the median earnings for FPS are the highest. If we looked into the game, players from DOTA2 earn the highest median USD Prize, which is not CSGO anymore.
+
+#### From country&continent point of view ####
+
+- Country and Continent Interestingly, it seems that China has the most amount of ESports earnings. If we look at Continent, Asia and Europe largely dominates in terms of total USD earned. However, if we look at it from other dimension. Countries like Lebonon and Parkistan take the cake.
+- Countries like China and Korea probably have a way higher population that are into ESports, thus resulting in higher total earnings. Countries like Parkistan and other less developed countries probably aren't as accepting of ESports culture, so you would have to be really good to get into it, which explains higher median earnings. Some of the lower player count country has "elite" players while popular countries have sheer numbers.
 
 
 ### Related work
@@ -54,7 +91,6 @@ However, people usually do not have an intuitive understanding of the income of 
 
 1. [esports_earnings_EDA](https://www.kaggle.com/code/derisnoor/esports-earnings-eda)
 
-    
 2. [eSports Earnings: Data Visualization and Exploration](https://www.kaggle.com/code/hbakker/esports-exploratory-analysis)
 
 
