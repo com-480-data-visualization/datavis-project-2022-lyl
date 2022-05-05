@@ -458,7 +458,9 @@ ul {
 @media only screen and (min-width: 1200px) and (max-width: 3640px) {
   /* line 238, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_common.scss */
   .container {
-    max-width: 1200px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -2562,21 +2564,23 @@ ul {
   width: 67%;
 }
 
-/**************** banner part css start ****************/
+/**************** intro part css start ****************/
 /* line 2, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_banner.scss */
 .intro_part {
   position: relative;
-  background-image: url(../img/game_logo/esports-bg.jpg);
-  background-repeat: no-repeat;
+  width: auto;
+  background: url(../img/esports-bg.jpg) no-repeat center;
   background-size: contain;
-  background-position: right;
+  margin-bottom: 100px;
 }
+
 
 /* line 8, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_banner.scss */
 .intro_part .intro_text {
   display: table;
   width: 100%;
-  height: 1020px;
+  height: 720px;
+  margin: auto;
 }
 
 /* line 12, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_banner.scss */
@@ -2587,20 +2591,20 @@ ul {
 
 @media (max-width: 991px) {
   /* line 8, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_banner.scss */
-  .banner_part .banner_text {
+  .intro_part .intro_text {
     height: 650px;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   /* line 8, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_banner.scss */
-  .banner_part .banner_text {
+  .intro_part .intro_text {
     height: 650px;
   }
 }
 
 /* line 22, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_banner.scss */
-.banner_part .banner_text h1 {
+.intro_part .intro_text h1 {
   font-size: 60px;
   text-transform: capitalize;
   font-weight: 700;
@@ -2611,7 +2615,7 @@ ul {
 
 @media (max-width: 576px) {
   /* line 22, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_banner.scss */
-  .banner_part .banner_text h1 {
+  .intro_part .intro_text h1 {
     font-size: 25px;
     margin-bottom: 15px;
     line-height: 1.3;
@@ -2620,7 +2624,7 @@ ul {
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* line 22, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_banner.scss */
-  .banner_part .banner_text h1 {
+  .intro_part .intro_text h1 {
     font-size: 30px;
     margin-bottom: 15px;
     line-height: 1.3;
@@ -2629,7 +2633,7 @@ ul {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 22, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_banner.scss */
-  .banner_part .banner_text h1 {
+  .intro_part .intro_text h1 {
     font-size: 40px;
     margin-bottom: 15px;
     line-height: 1.3;
@@ -2638,7 +2642,7 @@ ul {
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   /* line 22, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_banner.scss */
-  .banner_part .banner_text h1 {
+  .intro_part .intro_text h1 {
     font-size: 40px;
     margin-bottom: 15px;
     line-height: 1.4;
@@ -2646,12 +2650,12 @@ ul {
 }
 
 /* line 49, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_banner.scss */
-.banner_part .banner_text h1 span {
+.intro_part .intro_text h1 span {
   color: #ff0000;
 }
 
 /* line 53, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_banner.scss */
-.banner_part .banner_text p {
+.intro_part .intro_text p {
   font-size: 15px;
   line-height: 1.8;
   font-family: "Poppins", sans-serif;
@@ -2662,7 +2666,7 @@ ul {
 
 @media (max-width: 991px) {
   /* line 53, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_banner.scss */
-  .banner_part .banner_text p {
+  .intro_part .intro_text p {
     padding-right: 0;
     margin-bottom: 10px;
   }
@@ -2670,14 +2674,14 @@ ul {
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   /* line 53, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_banner.scss */
-  .banner_part .banner_text p {
+  .intro_part .intro_text p {
     padding-right: 0;
   }
 }
 
 @media (max-width: 991px) {
   /* line 68, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_banner.scss */
-  .banner_part .banner_text .btn_1 {
+  .intro_part .intro_text .btn_1 {
     margin-top: 30px;
   }
 }
@@ -2707,14 +2711,13 @@ ul {
 
 /************review_part css start***************/
 /* line 2, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_live_stareams.scss */
-.live_stareams {
+.game_intro {
   position: relative;
+  width: 100%;
   z-index: 99;
-  background: url(../img/live_stareams_bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding: 140px 0 190px;
+  background: url(../img/live_stareams_bg.png) no-repeat center;
+  background-size: auto;
+  padding: 200px 0 300px;
   overflow: hidden;
 }
 
