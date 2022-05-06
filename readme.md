@@ -119,7 +119,9 @@ Most of the Exploratory Data Analysis of the above related works use static visu
 
 **10% of the final grade**
 
+The report for Milestone 2: 
 
+The skeleton code is in the  `web` folder, click [link](https://com-480-data-visualization.github.io/datavis-project-2022-lyl/) to see the website frame work.
 
 ## Milestone 3 (3rd June, 5pm)
 
