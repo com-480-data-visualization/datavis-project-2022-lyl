@@ -6,7 +6,7 @@
 | Luo Ruizhi | 323100 |
 | Yu Aibin | 336380 |
 
-Click the [link](https://com-480-data-visualization.github.io/datavis-project-2022-lyl/) to see the website frame work.
+Click the [link](https://com-480-data-visualization.github.io/datavis-project-2022-lyl/web) to see the website frame work.
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
 ## Milestone 1 (8th April, 5pm)
@@ -121,7 +121,7 @@ Most of the Exploratory Data Analysis of the above related works use static visu
 
 The report for Milestone 2: [Milestone 2 - Report](milestones/milestone2.pdf)
 
-The skeleton code is in the  `web` folder, click [link](https://com-480-data-visualization.github.io/datavis-project-2022-lyl/) to see the website frame work.
+The skeleton code is in the  `web` folder, click [link](https://com-480-data-visualization.github.io/datavis-project-2022-lyl/web) to see the website frame work.
 
 ## Milestone 3 (3rd June, 5pm)
 
