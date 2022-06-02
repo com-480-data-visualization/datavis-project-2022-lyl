@@ -31,6 +31,12 @@
   background: -ms-linear-gradient(16deg, #000 0%, #000 100%);
 }
 
+.navbar-text{
+  font-family: "Poppins", sans-serif;
+  font-size: 15px
+}
+
+
 /**************** extend css start ****************/
 /**************** common css start ****************/
 /* line 3, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_common.scss */
@@ -40,6 +46,153 @@ body {
   margin: 0;
   font-size: 14px;
 }
+
+#game_intro,#player_teams,#world_map {
+  position: relative;
+  width: 100%;
+  z-index: 80;
+  font-family: "Poppins", sans-serif;
+  /* background: url(../img/live_stareams_bg.png) no-repeat center; */
+  background-size: auto;
+  padding: 0px 100px 100px;
+  overflow: hidden;
+}
+
+.show{
+  margin-top: 20px;
+}
+#game_name{
+  text-align:center;
+  color: #f5f7fc;
+  font-size: 30px;
+}
+
+
+#show_players_teams {
+  color: #f5f7fc;
+  float: left;
+  padding: auto;
+  width: 1000px;
+  height: 400px;
+  font-size: 30px;
+  text-align:center;
+  /* background-color: red; */
+}
+
+#game_icon {
+  /* background-color: orange; */
+  margin-left: 1010px;
+  /* height: 300px; */
+}
+
+#show_players {
+  color: #f5f7fc;
+  float: left;
+  padding: auto;
+  width: 500px;
+  height: 400px;
+  /* background-color: red; */
+}
+
+#show_players_teams img {
+  display:block;
+  height:300px;
+  margin:0 auto;
+}
+
+#show_teams {
+  margin-left: 510px;
+  /* background-color: red; */
+}
+
+.show #player_img{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.show #team_img{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+audio {
+  width: 115px;
+  height: 25px;
+}
+
+audio::-webkit-media-controls-panel {
+  -webkit-justify-content: center;
+  height: 25px;
+}
+
+/* Removes the timeline */
+audio::-webkit-media-controls-timeline {
+  display: none !important;
+}
+
+/* Removes the time stamp */
+audio::-webkit-media-controls-current-time-display {
+  display: none;
+}
+audio::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+
+#inner{
+  background-color: #333;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+#inner img {
+  display: inline-block;
+  color: rgb(64, 27, 182);
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+
+ #inner>img:hover {
+  background-color: #777;
+}
+
+.article-deviation:target{
+  padding-top: 100px !important;
+}
+
+#respond {
+  position:relative;
+  width: 70%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  color: #be9eb9;
+}
+
+/* style for classes */
+.countries {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+.legendThreshold {
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.caption {
+    fill: #000;
+    text-anchor: start;
+    font-weight: bold;
+}
+.tooltip {
+    position: absolute;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
 
 /* line 9, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_common.scss */
 .message_submit_form:focus {
@@ -459,6 +612,7 @@ ul {
   /* line 238, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_common.scss */
   .container {
     width: 100%;
+    height: 50%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -2203,7 +2357,7 @@ ul {
 .main_menu .main-menu-item ul li .nav-link {
   color: #fff;
   font-size: 15px;
-  padding: 43px 23px;
+  padding: 20px 23px;
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
   line-height: 12px;
@@ -2571,7 +2725,7 @@ ul {
   width: auto;
   background: url(../img/esports-bg.jpg) no-repeat center;
   background-size: contain;
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 }
 
 
@@ -2711,15 +2865,7 @@ ul {
 
 /************review_part css start***************/
 /* line 2, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_live_stareams.scss */
-.game_intro {
-  position: relative;
-  width: 100%;
-  z-index: 99;
-  background: url(../img/live_stareams_bg.png) no-repeat center;
-  background-size: auto;
-  padding: 200px 0 300px;
-  overflow: hidden;
-}
+
 
 @media (max-width: 991px) {
   /* line 2, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_live_stareams.scss */

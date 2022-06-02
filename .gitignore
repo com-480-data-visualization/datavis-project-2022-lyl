@@ -2,6 +2,9 @@
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
+.ipynb_checkpoints/
+.vs/
+
 *.py[cod]
 *$py.class
 
