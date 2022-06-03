@@ -6765,3 +6765,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+axisRed line{
+    stroke: rgb(255, 255, 255);
+  }
+
+  .axisRed path{
+    stroke: rgb(255, 255, 255);
+  }
+
+  .axisRed text{
+    fill: rgb(255, 255, 255);
+  }
