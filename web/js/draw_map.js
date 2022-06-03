@@ -1,5 +1,5 @@
 var width = 900, height = 400
-svg = d3.select('#choropleth-graph')
+svg1 = d3.select('#choropleth-graph')
             .append("svg")
             .attr("width", width)
             .attr("height", height)
@@ -28,7 +28,7 @@ var colorScale = d3.scaleThreshold()
     .range(colorScheme);
 
 // Legend
-var g = svg.append("g")
+var g = svg1.append("g")
     .attr("class", "legendThreshold")
     .attr("transform", "translate(20,20)");
 g.append("text")
@@ -41,7 +41,7 @@ var legend = d3.legendColor()
     .labels(function (d) { return labels[d.i]; })
     .shapePadding(4)
     .scale(colorScale);
-svg.select(".legendThreshold")
+svg1.select(".legendThreshold")
     .call(legend);
 
 // Load external data and boot
@@ -96,7 +96,7 @@ function ready(error, topo) {
     }
 
     // Draw the map
-    svg.append("g")
+    svg1.append("g")
         .attr("class", "countries")
         .selectAll("path")
         .data(topo.features)
