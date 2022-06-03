@@ -1,4 +1,4 @@
-// var game_genre = ["Dota 2","League of Legends","Fortnite","Starcraft II","Counter-Strike: Global Offensive"]
+
 
 
 var earning;
@@ -11,6 +11,16 @@ var team_img = document.getElementById('team_img');
 
 var player_earning_value = document.getElementById('player_earning_value');
 var team_earning_value = document.getElementById('team_earning_value');
+
+var quote_text ={"Dota 2":"It's a team game; it’s not about you, it’s about everyone around you.",
+            "League of Legends":"There aren't any absolute winners in LoL. I need to work even harder in the future.",
+            "Counter-Strike: Global Offensive":"You’re not alone, and together we can make a difference. ",
+            "Fortnite":"I see Fortnite as a way of creating friendships and bonds.",
+            "Starcraft II":"Winning everything is pretty much what you want as a pro gamer, so that was the best time of my StarCraft 2 career."}
+var quote_name = document.getElementById('quote_name');
+var quote = document.getElementById('quote');
+
+
 
 // var svg_table = d3.select("#table")
 //     .appemd("svg")
@@ -91,6 +101,8 @@ function show_table(game){
      var image = document.getElementById(game);
      image.style.filter = 'grayscale(0%)';
 
+     quote_name.innerHTML = "—".concat(max_player[0].NameFirst.concat(" ").concat(max_player[0].NameLast));
+     quote.innerHTML = quote_text[game]
 }
 
 

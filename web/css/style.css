@@ -309,6 +309,32 @@ audio::-webkit-media-controls-time-remaining-display {
   vertical-align: middle;
 }
 
+
+blockquote {
+  margin: 0;
+  color: #fff;
+}
+
+blockquote p {
+  padding: 15px;
+  margin-top:20px;
+  margin-left:15%;
+  font-size: 20px;
+  /* background: #eee; */
+  border-radius: 5px;
+  color: #fff;
+}
+
+blockquote p::before {
+  content: '\201C';
+  color: #fff;
+}
+
+blockquote p::after {
+  content: '\201D';
+  color: #fff;
+}
+
 /* style for map */
 
 /* #choropleth{
@@ -321,8 +347,8 @@ audio::-webkit-media-controls-time-remaining-display {
   margin-bottom: 50px;
   margin-right: auto;  
   margin-left: auto;
-  width:800px;
-  font-size: 24px;
+  width:1000px;
+  font-size: 22px;
 } 
 
 
@@ -337,7 +363,7 @@ audio::-webkit-media-controls-time-remaining-display {
   margin-right: auto;  
   margin-left: auto;
   width:1000px;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .countries {

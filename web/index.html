@@ -111,7 +111,7 @@
             <hr style="border:0;background-color:rgb(63, 66, 65);height:3px;width: 2000px;"> 
             <div class="container">
                 <h1 style="text-align: center;">Players and teams who earn most in Top5 games </h1>
-                <p style="text-align: center;margin-bottom: 30px;"><a style="color: #D3B1C2">Click</a> the icon to see Top teams and Top players.</p>
+                <p style="text-align: center;margin-bottom: 30px;"><a style="color: #D3B1C2">Click</a> the icon to see Top players and Top teams.</p>
                     <!-- <iframe style="float: left; margin-bottom: 50px" src="lol_prize.html" width="900px" height="620px">   
                     </iframe> -->
                     <div class="show" id = "game_name" > 
@@ -125,7 +125,7 @@
                         <div id="show_players">
                             <div class="show" > <img  id = "player_img" src="img\\player\\Johan.png" ></div>
                             <div class="show" id = "player_name">
-                                <span>Johan</span>    
+                                <span>Johan Sundstein</span>    
                             </div> 
                             <div class="show" id = "earning_info"> 
                                 <div id = "player_earning_value" > 
@@ -153,21 +153,22 @@
                         </div>
 
                     </div>
+
                     <div id="game_icon">
                         <ul style="text-align: right;margin-bottom: 50px">
-                            <li style="margin-bottom: 113px">
+                            <li style="margin-bottom: 90px">
                                 <img class ='logo_default' src="img/game_logo/dota.png" onclick= "show_table(this.id)" id='Dota 2'
                                     style='width:80%;float: right; margin-right:-50px' />>
                             </li>
-                            <li style="margin-bottom: 120px">
+                            <li style="margin-bottom: 90px">
                                 <img class ='logo' src="img/game_logo/lol.png"  onclick="show_table(this.id)" id='League of Legends'
                                     style='width:80%;float: right; margin-right:-50px' />>
                             </li>
-                            <li style="margin-bottom: 120px">
+                            <li style="margin-bottom: 90px">
                                 <img class ='logo' src="img/game_logo/csgo.png"  onclick="show_table(this.id)" id='Counter-Strike: Global Offensive'
                                     style='width:80%;float: right; margin-right:-50px' />>
                             </li>
-                            <li style="margin-bottom: 120px">
+                            <li style="margin-bottom: 90px">
                                 <img class ='logo' src="img/game_logo/fortnite.png"  onclick="show_table(this.id)" id='Fortnite'
                                     style='width:80%;float: right; margin-right:-50px' />>
                             </li>
@@ -178,6 +179,13 @@
                     
                          </ul> -->
                     </div>
+                    <figure>
+                        <blockquote cite="https://www.huxley.net/bnw/four.html">
+                            <p id="quote">It's a team game; it’s not about you, it’s about everyone around you.</p>
+                        </blockquote>
+                        <figcaption id = "quote_name" style="color: #fff;text-align: right;font-size:16px ;">—Johan Sundstein</figcaption>
+                    </figure>
+
             </div>
         </section>
         <!-- player_teams part end-->
@@ -190,7 +198,10 @@
             <div class="container">
                 <h1 style="margin-bottom: 50px;text-align: center">Global Statistics</h1>
                 <div id="map_description">
-                    Here we explore the average earnings of players in different regions or countries.It is obvious that Asia is the highest earning region across the world.
+                    We explore the total earnings of players in terms of country and continent. From the map, we can see that China has the highest quantity of Esports earnings. 
+                    When it comes to total earnings by continent, Asia, and Europe mostly dominate.
+                    <br><br>
+                    Click to see exact total earnings of selected region.
                 </div>
                 <div id="choropleth-graph"></div>
 
@@ -208,7 +219,11 @@
                     <div id="my_dataviz"></div>
                 </div>
                  <div id="line_chart_description">
-                    Here we explore the average earnings of players in different regions or countries.It is obvious that Asia is the highest earning region across the world.
+                    Click the selection box to see how esports players' earnings have changed in a certain game during last decade.
+                    <br><br>
+                    We explore how esports revenue has changed for various games rom 2010 to 2020, We can observe from the line graph that Dota2 and Fortnite have the highest total player earnings. 
+                    This could be due to the massive number of players in these two games, as well as the big prize money.
+                    Furthermore, we can see that, in 2020, players total income has decreased, presumably because to the new crown epidemic.
                  </div>
             </div>
         </section>
