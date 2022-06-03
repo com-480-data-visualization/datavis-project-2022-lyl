@@ -6,8 +6,39 @@
 | Luo Ruizhi | 323100 |
 | Yu Aibin | 336380 |
 
-Click the [link](https://com-480-data-visualization.github.io/datavis-project-2022-lyl/web) to see the website frame work.
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
+
+## Technical Setup
+The visualization can be open from both local and remote host:
+* Github host: Click the [link](https://com-480-data-visualization.github.io/datavis-project-2022-lyl/web) to see the website.
+* Local host: You can fork this project repository and open on you local machine.
+
+### Setup local host
+1. Clone the whole repo to your desired directory. A guide to install git could be found [Here](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+```
+$ git clone git@github.com:com-480-data-visualization/datavis-project-2022-lyl.git
+```
+3. Setup the http server at the root folder of your local directory. A guide to install http server could be found [Here](https://www.npmjs.com/package/http-server)
+```
+../datavis-project-2022-lyl > http-server 
+```
+3. Open your browser and put the address of your http server (`http://localhost:8080/` as default)
+
+## Intended Usage
+Over the past few years, the eSports industry has been growing, the number of viewers watching these games has increased every year, eSports professional players and video game streaer have become a promising career.
+
+However, people usually do not have an intuitive understanding of the income of e-sports practitioners. We hope to find out what the most popular games are currently through some data exploration and analysis, and display the income of players and teams interactively. We hope that our visualization could help the new gamers or pro gamers to decide which game to learn first or learn next based on popularity and which region is more promising based on the average salary.
+
+The target audiences are:
+* Teenagers who have talents in esports and want to be a professional player or vedio game streamer in the future. They need to search for the income of the top players in the field for the decision-making of their future career plan. For example, they want to know which gaming will let them earn more salary in the same genre.
+
+* Investigators and advertising sponsor who want to promote their product in the tournament or the live streaming like Twitch. The salary of the practitioners the amount of the sponsorship will give them a general information about the popularity of the different games and the budget they need.
+
+A user-guide demostration could be found with the following Screencast:
+
+<video id="video" controls="" preload="none">
+      <source id="mp4" src="screencast/screencast.mp4" type="video/mp4">
+</videos>
 
 ## Milestone 1 (8th April, 5pm)
 
@@ -34,16 +65,6 @@ The topic of our visualization project is to explore the earnings of eSports pla
 3. In the next scene, there is an interactive chart that shows players and teams with the highest earnings in distinct games.
 4. In the final scene, a heat map of the world visualizes the average salary of esports players from different continents and countries. 
 
-
-#### Motivation: 
-Over the past few years, the eSports industry has been growing, the number of viewers watching these games has increased every year, eSports professional players and video game streaer have become a promising career.
-
-However, people usually do not have an intuitive understanding of the income of e-sports practitioners. We hope to find out what the most popular games are currently through some data exploration and analysis, and display the income of players and teams interactively. We hope that our visualization could help the new gamers or pro gamers to decide which game to learn first or learn next based on popularity and which region is more promising based on the average salary.
-
-#### Target audiences 
-* Teenagers who have talents in esports and want to be a professional player or vedio game streamer in the future. They need to search for the income of the top players in the field for the decision-making of their future career plan. For example, they want to know which gaming will let them earn more salary in the same genre.
-
-* Investigators and advertising sponsor who want to promote their product in the tournament or the live streaming like Twitch. The salary of the practitioners the amount of the sponsorship will give them a general information about the popularity of the different games and the budget they need.
 
 ### Exploratory Data Analysis
 
