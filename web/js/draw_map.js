@@ -78,7 +78,7 @@ function ready(error, topo) {
     var mousemove = function(d) {
         d.total = data.get(d.id) || 0;
         Tooltip
-        .html("The exact value of " + d.id + " is: " + d.total)
+        .html("The average player earnings of " + d.id + " is: $ " + d.total)
         .style("left", (d3.mouse(this)[0]-70) + "px")
         .style("top", (d3.mouse(this)[1]) + "px")
     }
