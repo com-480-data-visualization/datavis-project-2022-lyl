@@ -34,11 +34,7 @@ The target audiences are:
 
 * Investigators and advertising sponsor who want to promote their product in the tournament or the live streaming like Twitch. The salary of the practitioners the amount of the sponsorship will give them a general information about the popularity of the different games and the budget they need.
 
-A user-guide demostration could be found with the following Screencast:
-
-<video id="video" controls="" preload="none">
-      <source id="mp4" src="screencast/screencast.mp4" type="video/mp4">
-</videos>
+A user-guide demostration could be found with the following [Screencast](https://www.youtube.com/watch?v=CmxXkLCKh0k):
 
 ## Milestone 1 (8th April, 5pm)
 
