@@ -2880,12 +2880,19 @@ ul {
 
 /* line 22, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_banner.scss */
 .intro_part .intro_text h1 {
+  background:rgba(38, 82, 202, 0.5);
   font-size: 60px;
   text-transform: capitalize;
-  font-weight: 700;
+  font-weight: 1000;
   margin-bottom: 32px;
   line-height: 70px;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+.intro_part .intro_text p {
+  background:rgba(38, 82, 202, 0.5);
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 @media (max-width: 576px) {
