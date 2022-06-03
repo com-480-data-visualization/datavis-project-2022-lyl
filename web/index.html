@@ -93,9 +93,13 @@
                 </div>
             </div>
             <div id = "show_game">
-                <img id = "game_img" src="" >
+                <img id = "game_img" src="img/game_index/0.jpeg" >
+
             </div>
-            <div id='respond'>
+            <div id='respond' 
+                <span>
+                    Dota 2 is a multiplayer online battle arena (MOBA) video game developed and published by Valve. Dota 2 is played in matches between two teams of five players, with each team occupying and defending their own separate base on the map. A team wins by being the first to destroy the other team's 'Ancient', a large structure located within their base.
+                </span>
             </div>
 
         </section>
@@ -110,26 +114,49 @@
                 <p style="text-align: center;margin-bottom: 30px;"><a style="color: #D3B1C2">Click</a> the icon to see Top teams and Top players.</p>
                     <!-- <iframe style="float: left; margin-bottom: 50px" src="lol_prize.html" width="900px" height="620px">   
                     </iframe> -->
-                    <div class="show" id = "game_name" > </div> 
+                    <div class="show" id = "game_name" > 
+                        <span>
+                            Dota 2
+                        </span> 
+                    </div> 
                     <div id="show_players_teams">
                         
                         <!-- <div class="show" id = "Top_player" > </div>  -->
                         <div id="show_players">
-                            <div class="show" > <img  id = "player_img" src="" ></div>
-                            <div class="show" id = "player_name"> </div> 
-                            <div class="show" > <img  id = "earning_img" src="" ></div>
-                            <div class="show" > <img  id = "prize_img" src="" ></div>
+                            <div class="show" > <img  id = "player_img" src="img\\player\\Johan.png" ></div>
+                            <div class="show" id = "player_name">
+                                <span>Johan</span>    
+                            </div> 
+                            <div class="show" id = "earning_info"> 
+                                <div id = "player_earning_value" > 
+                                    $ 6952596.58
+                                </div>
+                            </div>
+                            <!-- <div class="show" id = "prize_info"> 
+                                    $1000000
+                            </div> -->
                         </div>
                         <div id="show_teams">
-                            <div class="show" > <img  id = "team_img" src="" ></div>
-                            <div class="show" id = "team_name"> </div> 
+                            <div class="show" > <img  id = "team_img" src="img\\team\\OG.png"; ></div>
+                            <div class="show" id = "team_name"> 
+                                <span>OG</span>   
+                            </div> 
+
+                            <div class="show" id = "earning_info"> 
+                                <div id = "team_earning_value" > 
+                                    $ 33810636.13
+                                </div>
+                             </div>
+                            <!-- <div class="show" id = "prize_info"> 
+                                $1000
+                            </div> -->
                         </div>
 
                     </div>
                     <div id="game_icon">
                         <ul style="text-align: right;margin-bottom: 50px">
                             <li style="margin-bottom: 113px">
-                                <img class ='logo' src="img/game_logo/dota.png" onclick= "show_table(this.id)" id='Dota 2'
+                                <img class ='logo_default' src="img/game_logo/dota.png" onclick= "show_table(this.id)" id='Dota 2'
                                     style='width:80%;float: right; margin-right:-50px' />>
                             </li>
                             <li style="margin-bottom: 120px">
@@ -171,6 +198,7 @@
             <hr style="border:0;background-color:rgb(63, 66, 65);height:3px;width: 2000px;"> 
             <div class="container">
                  <!-- Initialize a select button -->
+                 <h1 style="margin-bottom: 50px;text-align: center">Number of players</h1>
                  <select id="selectButton"></select>
                  <div id="my_dataviz"></div>
             </div>

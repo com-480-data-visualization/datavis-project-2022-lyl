@@ -120,19 +120,31 @@ body {
   overflow: hidden;
 }
 
-.paint {
+.paint  {
   opacity: 0.5;
   filter: alpha(opacity=40);
+  /* filter: grayscale(100%) */
 }
 .paint:hover {
   opacity: 1.0;
+  z-index: 999;
   filter: alpha(opacity=100);
 }
 
-.paint:visited {
+.logo {
+  position: relative;
+  filter: grayscale(100%);
+}
+.logo:hover {
+    display: block;
+    z-index: 999;
+    cursor: pointer;
+}
+
+/* .paint:visited {
   opacity: 1.0;
   filter: alpha(opacity=100);
-}
+} */
 
 .show{
   margin-top: 20px;
@@ -193,6 +205,55 @@ body {
   margin-bottom: 20px;
 }
 
+#show_players #earning_info{
+  margin-top: 40px;
+  margin-left: 120px;;
+  width: 300px;
+  height: 80px;
+  font-size:20px;
+  font-weight:400;
+  line-height: 80px;
+  background-image: url(../img/earning.png);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  text-indent: 2em;
+}
+
+#show_teams #earning_info{
+  margin-top: 45px;
+  margin-left: 100px;;
+  width: 300px;
+  height: 80px;
+  font-size:20px;
+  font-weight:400;
+  line-height: 80px;
+  background-image: url(../img/earning.png);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  text-indent: 2em;
+}
+
+/* #prize_info{
+  margin-left: 135px;;
+  width: 300px;
+  height: 80px;
+  font-size:20px;
+  font-weight:400;
+  line-height: 80px;
+  background-image: url(../img/prize.png);
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  text-indent: 2em;
+} */
+
+/* .show>#prize_img{
+  width: 70px;
+  height: 70px;
+} */
+
 audio {
   width: 115px;
   height: 25px;
@@ -237,7 +298,7 @@ audio::-webkit-media-controls-time-remaining-display {
 }
 
 .article-deviation:target{
-  padding-top: 100px !important;
+  padding-top: 120px !important;
 }
 
 /* #respond {

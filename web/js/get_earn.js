@@ -9,8 +9,8 @@ var player_img = document.getElementById('player_img');
 var team_name = document.getElementById('team_name');
 var team_img = document.getElementById('team_img');
 
-var earning_img = document.getElementById('earning_img');
-var prize_img = document.getElementById('prize_img');
+var player_earning_value = document.getElementById('player_earning_value');
+var team_earning_value = document.getElementById('team_earning_value');
 
 // var svg_table = d3.select("#table")
 //     .appemd("svg")
@@ -55,6 +55,8 @@ function show_table(game){
     player_name.innerHTML = max_player[0].NameFirst.concat(" ").concat(max_player[0].NameLast);
     player_img.src = "img\\player\\" + max_player[0].NameFirst +".png";
     
+    player_earning_value.innerHTML = "$ ".concat(max_player[0].TotalUSDPrize)
+    console.log(player_earning_value);
 
     var team_earn = $.ajax({
         url: "https://raw.githubusercontent.com/Edwin628/csv_data/main/highest_earning_teams.json",
@@ -84,9 +86,10 @@ function show_table(game){
      team_name.innerHTML = max_team[0].TeamName;
      var path_team = max_team[0].TeamName.split(" ").join("");
      team_img.src = "img\\team\\" + path_team +".png";
+     team_earning_value.innerHTML =  "$ ".concat(max_team[0].TotalUSDPrize)
      
-     earning_img.src = "img\\" + "earning" +".png";
-     prize_img.src = "img\\" + "prize" +".png";
+     var image = document.getElementById(game);
+     image.style.filter = 'grayscale(0%)';
 
 }
 
