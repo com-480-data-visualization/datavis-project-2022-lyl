@@ -142,6 +142,9 @@ The skeleton code is in the  `web` folder, click [link](https://com-480-data-vis
 
 **80% of the final grade**
 
+The screencast video for Milestone 3 could be found with the following link: [Screencast Milestone 3](https://www.youtube.com/watch?v=CmxXkLCKh0k)
+
+The process book for Milestone 3 could be found with the following link: [Process Book Milestone 3](Process_Book.pdf)
 
 
 ## Late policy
