@@ -78,8 +78,8 @@ function ready(error, topo) {
     var mousemove = function(d) {
         d.total = data.get(d.id) || 0;
         Tooltip
-        .html("The average player earnings of " + d.id + " is: $ " + d.total)
-        .style("left", (d3.mouse(this)[0]-70) + "px")
+        .html("The players earnings of " + d.id + " is: $ " + d.total)
+        .style("left", (d3.mouse(this)[0]) + "px")
         .style("top", (d3.mouse(this)[1]) + "px")
     }
 
