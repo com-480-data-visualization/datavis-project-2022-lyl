@@ -1,4 +1,4 @@
-var width = 900, height = 400
+var width = 1200, height = 600
 svg1 = d3.select('#choropleth-graph')
             .append("svg")
             .attr("width", width)

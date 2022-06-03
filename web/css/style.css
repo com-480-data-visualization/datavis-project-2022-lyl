@@ -311,30 +311,33 @@ audio::-webkit-media-controls-time-remaining-display {
 
 /* style for map */
 
-#choropleth{
+/* #choropleth{
   margin-left:100%;
-  /* width: 600px;
-  height: 400px; */
-}
+} */
 
 #map_description{
   color: #fff;
-  margin-top: 60px;
-  margin-left: 20%;
-  /* margin-left: 610px; */
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-right: auto;  
+  margin-left: auto;
+  width:800px;
+  font-size: 24px;
 } 
 
 
-#line_chart_img{
+/* #line_chart_img{
   float:left;
-  padding: auto;
-  width: 600px;
-  height: 400px;
-}
+} */
 
 #line_chart_description{
   color: #fff;
-  margin-left: 810px;
+  margin-top: 50px;
+  /* margin-bottom: 50px; */
+  margin-right: auto;  
+  margin-left: auto;
+  width:1000px;
+  font-size: 24px;
 }
 
 .countries {
