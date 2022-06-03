@@ -116,8 +116,12 @@ body {
   font-family: "Poppins", sans-serif;
   /* background: url(../img/live_stareams_bg.png) no-repeat center; */
   background-size: auto;
-  padding: 0px 100px 100px;
+  padding: 0px 100px 10px;
   overflow: hidden;
+}
+
+#line_chart {
+  padding: 0px 100px 70px;
 }
 
 .paint  {
