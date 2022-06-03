@@ -62,7 +62,7 @@ However, people usually do not have an intuitive understanding of the income of 
 * A team can appear more than once but note that it is a different game.
 * Since there are some star players in each game. There are lots of  'outliers' in the data, so it's better to use median rather than mean.
 
-![outliers](./img/outliers.png)
+![outliers](./web/img/outliers.png)
 
 **Our data exploratory analysis and visualization are mainly based on the teams, players and country&continent point of view, which conclusively provides the following findings.**
 
@@ -70,7 +70,7 @@ However, people usually do not have an intuitive understanding of the income of 
 
 - From the plot we can see that actually Starcraft II has the lion's share of tournaments, followed by CSGO, Dota 2 and League of Legends. In fact, Starcraft 2 has more than 2X as much tournaments as CSGO. However, this is likely due to how long the game has been released and it only ranks fourth in revenue. While Dota 2 is the most earned game, which is almost 3x as much earnings as the second highest-earned game(CSGO).
 
-![newplot](./img/newplot.png)
+![newplot](./web/img/newplot.png)
 
 - While it's true that MOBO brings in the highest total USD Prize won and median earnings, the median earnings for CSGO are highest. In addition, it should be mentioned that MOBA games has the highest number of competitors within the dataset. This could signify that MOBA is indeed the most popular and thus could explain the higher amount of money earned by teams since there would be more viewership.
 
