@@ -6,8 +6,6 @@
 | Luo Ruizhi | 323100 |
 | Yu Aibin | 336380 |
 
-[Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
-
 ## Technical Setup
 The visualization can be open from both local and remote host:
 * Github host: Click the [link](https://com-480-data-visualization.github.io/datavis-project-2022-lyl/web) to see the website.
