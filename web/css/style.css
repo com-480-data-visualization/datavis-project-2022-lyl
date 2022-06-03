@@ -37,6 +37,67 @@
 }
 
 
+
+/*********header********/
+ul{
+  list-style-type: none;
+}
+.wrapHead{
+  width: 90%;
+  margin: 0 auto;
+  transition: all ease-in-out 0.5s;
+}
+.wrapHead.fixed-to-top{
+  width: 96%;
+}
+header{
+  position: fixed;
+  width: 100%;
+  background: rgba(38, 50, 56, 0.5);
+  padding: 10px 0;
+  z-index: 1;
+  transition: all ease-in-out 0.5s;
+}
+header:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+header.fixed-to-top{
+  background: rgba(38, 50, 56, 1);
+}
+#brand{
+  color: #ccc;
+  float: left;
+}
+#brand h1{
+  letter-spacing: 10px;
+  text-shadow: 2px 2px 5px #111;
+}
+nav{
+  float: right;
+  margin-top: 10px;
+}
+nav li{
+  display: inline-block;
+  margin: 0 4px;
+}
+nav li a{
+  padding: 10px 0;
+  text-decoration: none;
+  color: #e1e1e1;
+  transition: all ease-in-out 0.5s;
+}
+nav li a:hover{
+  color: #bbb;
+}
+
+
+
+
+/*********header********?
+
+
 /**************** extend css start ****************/
 /**************** common css start ****************/
 /* line 3, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_common.scss */
@@ -48,7 +109,7 @@ body {
 }
 
 
-#game_intro,#player_teams,#world_map {
+#game_intro,#player_teams,#world_map,#line_chart {
   position: relative;
   width: 100%;
   z-index: 80;
