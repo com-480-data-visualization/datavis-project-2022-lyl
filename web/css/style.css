@@ -193,8 +193,6 @@ body {
   margin:0 auto;
 }
 
-
-
 .show #player_img{
   margin-top: 20px;
   margin-bottom: 20px;
@@ -234,25 +232,6 @@ body {
   background-position: left center;
   text-indent: 2em;
 }
-
-/* #prize_info{
-  margin-left: 135px;;
-  width: 300px;
-  height: 80px;
-  font-size:20px;
-  font-weight:400;
-  line-height: 80px;
-  background-image: url(../img/prize.png);
-  background-size: 35%;
-  background-repeat: no-repeat;
-  background-position: left center;
-  text-indent: 2em;
-} */
-
-/* .show>#prize_img{
-  width: 70px;
-  height: 70px;
-} */
 
 audio {
   width: 115px;
@@ -301,59 +280,63 @@ audio::-webkit-media-controls-time-remaining-display {
   padding-top: 0px !important;
 }
 
-/* #respond {
-  float: left;
-  position:relative;
-  width: 800px;
-  height: 400px;
-  padding: auto;
-  margin-top: 50px;
-  margin-left: 300px;
-  font-size: 26px;
-  color: #be9eb9;
-}
-
-
 #show_game{
-  margin-top: 50px;
-  margin-left: 60%;
-} */
-
-#show_game img{
-  width: 600px;
-  /* height: 300px; */
-}
-
-
-#show_game{
+  display: table;
   float:left;
   position:relative;
-  width: 600px;
-  height: 450px;
-  /* padding: auto; */
+  width: 500px;
+  height: 300px;
+  text-align:center;
   margin-top: 80px;
-  margin-left: 25%;
-  margin-right: 1%;
+  margin-left: -5%;
+  margin-right: 3%;
+  display: table-cell;
+  vertical-align: middle
 }
 
 #respond {
+  display: table;
   position:relative;
-  width: 800px;
+  padding-right: -100px;
+  width: 900px;
   height:450px;
-  vertical-align:middle;
-  display:table-cell; 
   margin-top: 80px;
   margin-left: 28%;
-  font-size: 26px;
+  margin-right: -10%;
+  font-size: 22px;
   color: #be9eb9;
+  display: table-cell;
+  vertical-align: middle;
 }
 
-/* #earning_img, #prize_img{
-  width: 50px;
-  height: 50px;
-} */
-
 /* style for map */
+
+#choropleth{
+  margin-left:100%;
+  /* width: 600px;
+  height: 400px; */
+}
+
+#map_description{
+  color: #fff;
+  margin-top: 60px;
+  margin-left: 20%;
+  /* margin-left: 610px; */
+} 
+
+
+#line_chart_img{
+  float:left;
+  padding: auto;
+  width: 600px;
+  height: 400px;
+}
+
+#line_chart_description{
+  color: #fff;
+  margin-left: 810px;
+}
+
 .countries {
   fill: none;
   stroke: #fff;
@@ -374,6 +357,8 @@ audio::-webkit-media-controls-time-remaining-display {
     display: inline-block;
     border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
+
+
 
 
 /* line 9, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_common.scss */
