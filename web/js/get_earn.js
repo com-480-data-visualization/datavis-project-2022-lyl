@@ -9,6 +9,9 @@ var player_img = document.getElementById('player_img');
 var team_name = document.getElementById('team_name');
 var team_img = document.getElementById('team_img');
 
+var earning_img = document.getElementById('earning_img');
+var prize_img = document.getElementById('prize_img');
+
 // var svg_table = d3.select("#table")
 //     .appemd("svg")
 //     .attr("width", 900)
@@ -21,7 +24,7 @@ var team_img = document.getElementById('team_img');
 function show_table(game){
 
     var earn = $.ajax({
-        url: "..\\data\\json\\highest_earning_players.json",
+        url: "https://raw.githubusercontent.com/Edwin628/csv_data/main/highest_earning_players.json",
         type: "GET",
         dataType: "json", 
         async: false,
@@ -54,7 +57,7 @@ function show_table(game){
     
 
     var team_earn = $.ajax({
-        url: "..\\data\\json\\highest_earning_teams.json",
+        url: "https://raw.githubusercontent.com/Edwin628/csv_data/main/highest_earning_teams.json",
         type: "GET",
         dataType: "json", 
         async: false,
@@ -81,23 +84,10 @@ function show_table(game){
      team_name.innerHTML = max_team[0].TeamName;
      var path_team = max_team[0].TeamName.split(" ").join("");
      team_img.src = "img\\team\\" + path_team +".png";
-    //  team_img.width="200px"
-    
-    // svg_table.append("text")
-    // .attr('x', 300)
-    // .attr('y', 90)
-    // .text(max_player.NameFirst)
-    // .attr("fill","#613659")
-    // .attr("font-size", "30px");
-    // poster.append("text")
-    //         .attr("y", 120)
-    //           .attr("dy",0)
-    //         .attr("transform", "translate(300,0)")
-    //         .text("max_player.TotalUSDPrize")
-    //         .attr("font-size", "15px")
-    //         .attr("font-weight", 900)
-    //         .attr("fill","#613659")
-    //         .call(wrap,600);
+     
+     earning_img.src = "img\\" + "earning" +".png";
+     prize_img.src = "img\\" + "prize" +".png";
+
 }
 
 

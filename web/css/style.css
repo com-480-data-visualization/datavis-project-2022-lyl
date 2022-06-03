@@ -47,6 +47,7 @@ body {
   font-size: 14px;
 }
 
+
 #game_intro,#player_teams,#world_map {
   position: relative;
   width: 100%;
@@ -56,6 +57,20 @@ body {
   background-size: auto;
   padding: 0px 100px 100px;
   overflow: hidden;
+}
+
+.paint {
+  opacity: 0.5;
+  filter: alpha(opacity=40);
+}
+.paint:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+.paint:visited {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
 }
 
 .show{
@@ -94,16 +109,18 @@ body {
   /* background-color: red; */
 }
 
+#show_teams {
+  margin-left: 510px;
+  /* background-color: red; */
+}
+
 #show_players_teams img {
   display:block;
   height:300px;
   margin:0 auto;
 }
 
-#show_teams {
-  margin-left: 510px;
-  /* background-color: red; */
-}
+
 
 .show #player_img{
   margin-top: 20px;
@@ -140,7 +157,7 @@ audio::-webkit-media-controls-time-remaining-display {
 
 #inner{
   background-color: #333;
-  overflow-x: scroll;
+  overflow-x: hidden;
   overflow-y: hidden;
   white-space: nowrap;
 }
@@ -162,28 +179,71 @@ audio::-webkit-media-controls-time-remaining-display {
   padding-top: 100px !important;
 }
 
-#respond {
+/* #respond {
+  float: left;
   position:relative;
-  width: 70%;
+  width: 800px;
+  height: 400px;
+  padding: auto;
   margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 30px;
+  margin-left: 300px;
+  font-size: 26px;
   color: #be9eb9;
 }
 
-/* style for classes */
+
+#show_game{
+  margin-top: 50px;
+  margin-left: 60%;
+} */
+
+#show_game img{
+  width: 600px;
+  /* height: 300px; */
+}
+
+
+#show_game{
+  float:left;
+  position:relative;
+  width: 600px;
+  height: 450px;
+  /* padding: auto; */
+  margin-top: 80px;
+  margin-left: 25%;
+  margin-right: 1%;
+}
+
+#respond {
+  position:relative;
+  width: 800px;
+  height:450px;
+  vertical-align:middle;
+  display:table-cell; 
+  margin-top: 80px;
+  margin-left: 28%;
+  font-size: 26px;
+  color: #be9eb9;
+}
+
+/* #earning_img, #prize_img{
+  width: 50px;
+  height: 50px;
+} */
+
+/* style for map */
 .countries {
   fill: none;
   stroke: #fff;
   stroke-linejoin: round;
 }
 .legendThreshold {
+    fill: #fff;
     font-size: 12px;
     font-family: sans-serif;
 }
 .caption {
-    fill: #000;
+    fill: #fff;
     text-anchor: start;
     font-weight: bold;
 }

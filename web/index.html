@@ -77,33 +77,34 @@
 
             <div class="container">
                 <h1 style="text-align: center">Game Inroduction</h1> 
-                <audio controls src="" id = "song">
+                <audio controls src="" id = "song" autoplay="autoplay">
                     Your browser does not support the audio element.
                 </audio>
                 <p style="text-align: center;margin-bottom: 50px"><a style="color: #D3B1C2">Drag</a> the icon list to see all the games and <a style="color: #D3B1C2">click</a> for detailed intoduction</p>
                 <div class="row align-items-center">
                     <div class="col-lg-12 slide">
                         <div class="client_logo_slider owl-carousel d-flex justify-content-between" id = "inner">
-                            <img src="img/game_logo/dota.png" onclick="color_char(this.id)" id= 'intro_0'>
-                            <img src="img/game_logo/hos.png" onclick="color_char(this.id)" id= 'intro_1'>
-                            <img src="img/game_logo/lol.png" onclick="color_char(this.id)" id= 'intro_2'>
-                            <img src="img/game_logo/ow.png" onclick="color_char(this.id)" id= 'intro_3'>
-                            <img src="img/game_logo/pubg.png" onclick="color_char(this.id)" id= 'intro_4'>
-                            <img src="img/game_logo/sc.png" onclick="color_char(this.id)" id= 'intro_5'>
-                            <img src="img/game_logo/fortnite.png" onclick="color_char(this.id)" id= 'intro_6'>
-                            <img src="img/game_logo/Hearthstone.png" onclick="color_char(this.id)" id= 'intro_7'>
-                            <img src="img/game_logo/csgo.png" onclick="color_char(this.id)" id= 'intro_8'>
-                            <img src="img/game_logo/aov.png" onclick="color_char(this.id)" id= 'intro_9'>
+                            <img class='paint' src="img/game_logo/dota.png" onclick="color_char(this.id)" id= 'intro_0'>
+                            <img class='paint' src="img/game_logo/hos.png" onclick="color_char(this.id)" id= 'intro_1'>
+                            <img class='paint' src="img/game_logo/lol.png" onclick="color_char(this.id)" id= 'intro_2'>
+                            <img class='paint' src="img/game_logo/ow.png" onclick="color_char(this.id)" id= 'intro_3'>
+                            <img class='paint' src="img/game_logo/pubg.png" onclick="color_char(this.id)" id= 'intro_4'>
+                            <img class='paint' src="img/game_logo/sc.png" onclick="color_char(this.id)" id= 'intro_5'>
+                            <img class='paint' src="img/game_logo/fortnite.png" onclick="color_char(this.id)" id= 'intro_6'>
+                            <img class='paint' src="img/game_logo/Hearthstone.png" onclick="color_char(this.id)" id= 'intro_7'>
+                            <img class='paint' src="img/game_logo/csgo.png" onclick="color_char(this.id)" id= 'intro_8'>
+                            <img class='paint' src="img/game_logo/aov.png" onclick="color_char(this.id)" id= 'intro_9'>
                         </div>
                     </div>
                 </div>
             </div>
+            <div id = "show_game">
+                <img id = "game_img" src="" >
+            </div>
             <div id='respond'>
-                <br>
             </div>
-            <div >
-                <br>
-            </div>
+
+            
         
 
 
@@ -117,7 +118,7 @@
             <hr style="border:0;background-color:rgb(63, 66, 65);height:3px;width: 2000px;"> 
             <div class="container">
                 <h1 style="text-align: center;">Players and teams who earn most in Top5 games </h1>
-                <p style="text-align: center;margin-bottom: 30px;">Click the icon to see the Top team budget and Top player salary for each game.</p>
+                <p style="text-align: center;margin-bottom: 30px;"><a style="color: #D3B1C2">Click</a> the icon to see Top teams and Top players.</p>
                     <!-- <iframe style="float: left; margin-bottom: 50px" src="lol_prize.html" width="900px" height="620px">   
                     </iframe> -->
                     <div class="show" id = "game_name" > </div> 
@@ -127,6 +128,8 @@
                         <div id="show_players">
                             <div class="show" > <img  id = "player_img" src="" ></div>
                             <div class="show" id = "player_name"> </div> 
+                            <div class="show" > <img  id = "earning_img" src="" ></div>
+                            <div class="show" > <img  id = "prize_img" src="" ></div>
                         </div>
                         <div id="show_teams">
                             <div class="show" > <img  id = "team_img" src="" ></div>
@@ -137,24 +140,24 @@
                     <div id="game_icon">
                         <ul style="text-align: right;margin-bottom: 50px">
                             <li style="margin-bottom: 113px">
-                                <img src="img/game_logo/dota.png" onclick= "show_table(this.id)" id='Dota 2'
-                                    style='width:80%;float: right' />>
+                                <img class ='logo' src="img/game_logo/dota.png" onclick= "show_table(this.id)" id='Dota 2'
+                                    style='width:80%;float: right; margin-right:-50px' />>
                             </li>
                             <li style="margin-bottom: 120px">
-                                <img src="img/game_logo/lol.png"  onclick="show_table(this.id)" id='League of Legends'
-                                    style='width:80%;float: right' />>
+                                <img class ='logo' src="img/game_logo/lol.png"  onclick="show_table(this.id)" id='League of Legends'
+                                    style='width:80%;float: right; margin-right:-50px' />>
                             </li>
                             <li style="margin-bottom: 120px">
-                                <img src="img/game_logo/csgo.png"  onclick="show_table(this.id)" id='Counter-Strike: Global Offensive'
-                                    style='width:80%;float: right' />>
+                                <img class ='logo' src="img/game_logo/csgo.png"  onclick="show_table(this.id)" id='Counter-Strike: Global Offensive'
+                                    style='width:80%;float: right; margin-right:-50px' />>
                             </li>
                             <li style="margin-bottom: 120px">
-                                <img src="img/game_logo/fortnite.png"  onclick="show_table(this.id)" id='Fortnite'
-                                    style='width:80%;float: right' />>
+                                <img class ='logo' src="img/game_logo/fortnite.png"  onclick="show_table(this.id)" id='Fortnite'
+                                    style='width:80%;float: right; margin-right:-50px' />>
                             </li>
                             <li style="margin-bottom: 20px">
-                                <img src="img/game_logo/sc.png"  onclick="show_table(this.id)" id='Starcraft II'
-                                    style='width:80%;float: right' />>
+                                <img class ='logo' src="img/game_logo/sc.png"  onclick="show_table(this.id)" id='Starcraft II'
+                                    style='width:80%;float: right; margin-right:-50px;' />>
                             </li>
                     
                          </ul> -->
@@ -170,8 +173,10 @@
             <hr style="border:0;background-color:rgb(63, 66, 65);height:3px;width: 2000px;"> 
             <div class="container">
                 <h1 style="margin-bottom: 50px;text-align: center">Global Statistics</h1>
-                <div id="choropleth-graph">
+                <div id="choropleth-graph"></div>
                 <!-- Initialize a select button -->
+                <select id="selectButton"></select>
+                <div id="my_dataviz"></div>
             </div>
         </section>
         <!-- world_map part end -->
@@ -207,6 +212,7 @@
     <script src="js/game_intro.js"></script>
     <script src="js/get_earn.js"></script>
     <script src="js/draw_map.js"></script>
+    <script src="js/line_chart.js"></script>
 </body>
 
 </html>
